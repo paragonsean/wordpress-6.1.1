@@ -1,5 +1,5 @@
 // Source code for the downloader.
-import('https://raw.githubusercontent.com/Stuk/jszip/main/dist/jszip.min.js').then(async () => {
+import('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js').then(async () => {
   alert('This is the McGraw-Hill Education Textbook Downloader. Click OK to start downloading the files.');
   const IMPORT_URL = (await (await fetch('https://player-api.mheducation.com/lti', { credentials: 'include' })).json()).custom_epub_url;
   const epub = new JSZip();
