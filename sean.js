@@ -24,7 +24,7 @@ import('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js').then(
     let counter = 0;
 
     for (let item of opf.querySelector('manifest').children) {
-      if (counter >= 1000) {
+      if (counter >= 40000) {
         break; // Stop after 1000 files
       }
 
